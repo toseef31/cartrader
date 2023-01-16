@@ -1,6 +1,12 @@
+<script setup>
+const gotoDetail = (model, id) => {
+    navigateTo(`/car/${model}-${id}`)
+}
+</script>
+
 <template>
     <div class="shadow border w-full overflow-hidden mb-5 cursor-pointer">
-        <div class="flex h-full">
+        <div class="flex h-full" @click="gotoDetail('Accord', 1)">
             <img src="https://www.proton.com/-/media/project/proton-group/proton/media/car-models/x70/2022-x70/x70-mc1-booknow-thumb.ashx?la=en&hash=D6DCDD26F54A46285CEB78B0636E723D8185C194"
                 class=" h-full w-[150px] p-4 self-center" alt="">
             <div class="p-4 flex flex-col">
@@ -14,7 +20,7 @@
         </div>
     </div>
     <div class="shadow border w-full overflow-hidden mb-5 cursor-pointer">
-        <div class="flex h-full">
+        <div class="flex h-full" @click="gotoDetail('Civic', 2)">
             <img src="https://www.proton.com/-/media/project/proton-group/proton/media/car-models/x70/2022-x70/x70-mc1-booknow-thumb.ashx?la=en&hash=D6DCDD26F54A46285CEB78B0636E723D8185C194"
                 class=" h-full w-[150px] p-4 self-center" alt="">
 
@@ -28,7 +34,7 @@
         </div>
     </div>
     <div class="shadow border w-full overflow-hidden mb-5 cursor-pointer">
-        <div class="flex h-full">
+        <div class="flex h-full" @click="gotoDetail('City', 3)">
             <img src="https://www.proton.com/-/media/project/proton-group/proton/media/car-models/x70/2022-x70/x70-mc1-booknow-thumb.ashx?la=en&hash=D6DCDD26F54A46285CEB78B0636E723D8185C194"
                 class=" h-full w-[150px] p-4 self-center" alt="">
 
